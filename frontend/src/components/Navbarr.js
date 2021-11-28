@@ -1,7 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { Box, Container } from 'react-layout-components';
 import { Navbar, Nav } from 'react-bootstrap';
 
 export class Navbarr extends React.Component {
@@ -17,15 +14,21 @@ export class Navbarr extends React.Component {
   const id = localStorage.getItem('Email')
   if (id==null)
     {
-        this.state.auth = false;
+      this.setState({
+        auth: false
+      });
     }
   else
     {
-        this.state.auth = true;
+     this.setState({
+       auth: false
+     });
     }
   }
   logOut = () => {
-    this.state.auth = false;
+     this.setState({
+       auth: false
+     });
     localStorage.clear();
   };
 

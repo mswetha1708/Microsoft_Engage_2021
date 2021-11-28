@@ -1,21 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Grid, Paper, Avatar, Typography, TextField, Button } from '@material-ui/core'
 import AddCircleOutlineOutlinedIcon from '@material-ui/icons/AddCircleOutlineOutlined';
-import Radio from '@material-ui/core/Radio';
-import Box from '@mui/material/Box';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
-import Chip from '@mui/material/Chip';
-import { useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput'
 import Axios from 'axios';
-import * as Yup from "yup";
 export class SignUp extends React.Component {
   constructor() {
   super();
@@ -58,18 +49,6 @@ export class SignUp extends React.Component {
     const paperStyle = {padding :20, width: 300, margin: "0 auto" }
     const headerStyle = { margin: 0 }
     const avatarStyle = { backgroundColor: '#1b3ebd' }
-    const marginTop = { marginTop: 5 }
-    const top = {display: 'flex', flexDirection: 'row'}
-    const ITEM_HEIGHT = 48;
-    const ITEM_PADDING_TOP = 8;
-    const MenuProps = {
-      PaperProps: {
-        style: {
-          maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-          width: 250,
-        },
-      },
-    };
     return (
         <Grid>
             <Paper style={paperStyle}>

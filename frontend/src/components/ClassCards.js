@@ -19,7 +19,6 @@ function ClassCard({ name, creatorName, creatorPhoto, id, style }) {
       <div className="classCard__upper">
         <div className="classCard__className">{name}</div>
         <div className="classCard__creatorName">{creatorName}</div>
-        <img src={creatorPhoto} className="classCard__creatorPhoto" />
       </div>
       <div className="classCard__middle"></div>
       <div className="classCard__lower">

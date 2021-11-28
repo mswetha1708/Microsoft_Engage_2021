@@ -5,17 +5,10 @@ import ClassCard from "./ClassCards.js";
 import Axios from 'axios';
 
 function Dashboard() {
-//  const [user, loading, error] = useAuthState(auth);
   const [classes, setClasses] = useState([]);
 
   const fetchClasses = async () => {
     try {
-//      await db
-//        .collection("users")
-//        .where("uid", "==", user.uid)
-//        .onSnapshot((snapshot) => {
-//          setClasses(snapshot?.docs[0]?.data()?.enrolledClassrooms);
-//        });
     const email = localStorage.getItem('Email')
     console.log("Hello")
     console.log(email)
@@ -25,7 +18,6 @@ function Dashboard() {
         console.log(response)
         setClasses(response.data)
         console.log(classes)
-//        history.push("/dashboard");
       });
     console.log(classes)
     } catch (error) {
@@ -39,7 +31,7 @@ function Dashboard() {
   //, [user, loading]);
 
   useEffect(() => {
-    if (classes.length != 0) return;
+    if (classes.length) return;
     fetchClasses();
   });
   //, [user, loading]);

@@ -5,9 +5,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import { useHistory } from "react-router-dom";
-import * as Yup from 'yup'
 import Axios from 'axios';
-import Dashboard from './Dashboard.js'
 
 const Login = ({ handleChange }) => {
     const history = useHistory();
