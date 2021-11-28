@@ -10,7 +10,7 @@ app.use(cors());
 const db = mysql.createConnection({
 	user:"root",
 	host:"localhost",
-	password:"SwBhaM@123",
+	password:"Your_Password",
 	database:"Scheduler"
 });
 
@@ -20,7 +20,6 @@ app.post('/register',(req,res)=>{
 	const dept = req.body.dept;
 	const year = req.body.year;
 	const username = req.body.username;
-	console.log("Hi")
 	console.log(full_name,password,dept,year,username)
 	db.query("INSERT INTO UserDetails(Username, Email, Password, Dept, Year) VALUES (?, ?, MD5(?), ?, ?)",
 		[full_name, username, password, dept, year],
@@ -69,7 +68,6 @@ app.post('/dashboard',(req,res)=>{
                     if(errors){
                     	res.send({errors:errors});
                     }
-                        console.log("Hello")
                         console.log(results)
                         res.send(results);
                     });
