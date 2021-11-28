@@ -15,13 +15,13 @@ course wise.
 
 The front end is the client .To set up the front end,move to the directory frontend and 
 run the following command.
-### `npm install`
+#### `npm install`
 If there are exisitng modules and dependency issues,then run
-### `npm install --force`
+#### `npm install --force`
 After successful installation you will be able to see node_modules folder and package-lock.json
 
 
-###`npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -29,12 +29,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 To set up the database, ensure that mySQL is installed in your system and change the password of the database
 in the index.js file in the backend folder.
 Import the data in the file database.sql using the command:
-### `mysqldump db_name > database.sql`
+#### `mysqldump db_name > database.sql`
 
 The backend is the server.To set up the server, move to the directory backend and run the following command.
-### `npm install`
+#### `npm install`
 To start the server, run,
-### `node index.js`
+#### `node index.js`
 The server runs in 3001 port.
 After the server starts successfully, you will be able to see "running Server" message in the terminal.
 
